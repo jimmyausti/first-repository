@@ -10,7 +10,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #808dff;
-    height: 80px;
+    height: 70px;
+    padding: 0 16px;
+}
+.logo{
+    width: 300px;
 }
 ul{
     margin: 0 24px 0 0;
@@ -22,9 +26,13 @@ ul{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #cafdff;
     height: calc(100vh - 70px);
-
+    padding: 24px;
+}
+.subheader{
+    font-size: 24px;
 }
 h1{
     font-size: 60px;
@@ -39,12 +47,14 @@ h2{
     display: flex;
     align-items: center;
 }
-.section__content--landing{
+.section__text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
+    justify-content: space-between;
+}
+#about, #discord, #contact{
+    padding: 0 16px;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -57,9 +67,20 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: bold;
 }
 a{
     color: #000;
+    text-decoration:underline;
+}
+button{
+    border: none;
+    background-color:teal;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 8px;
+    border-radius: 4px;
+    cursor: pointer;
     text-decoration: none;
 }
 #about{
@@ -77,7 +98,11 @@ a{
 footer{
     background-color: #808dff;
     height: 80px;
+    padding-top: 16px;
 }
-p, label{
-    margin: 8px;
+p, label, input, textarea{
+    margin-bottom: 8px;
+}
+br{
+    margin: 24px 0;
 }
