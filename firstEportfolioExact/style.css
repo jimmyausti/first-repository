@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, span{
     line-height: 1.25;
 }
 .purple-text{
-    color: #5d3eff;
+    color: #DDC5A7;
 }
 
 p{
@@ -37,17 +37,34 @@ li{
     max-width: 800px;
     margin: 0 auto;
 }
+.container{
+    padding: 50px 0;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
 
 /* Navigation bar */
 
 nav {
     height: 100px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     width: 100%;
     margin: 0 auto;
+    background-color: #fffaf7;
+    margin-bottom: 24px;
+}
+
+.nav__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 32px;
 }
 
 .nav__link--list{
@@ -62,7 +79,7 @@ nav {
 }
 
 .nav__link--anchor--primary{
-    background-color: #6030b1;
+    background-color: #b08245;
     padding: 8px 20px;
     border-radius: 50px;
     color: white;
@@ -70,12 +87,12 @@ nav {
 }
 
 .nav__link--anchor--primary:hover{
-    background-color: #5d3eff;
+    background-color: #DDC5A7;
 }
 
 .personal__logo{
     font-size: 24px;
-    color:#6030b1;
+    color:#b08245;
     margin: 0 12px;
     font-weight: bold;
 }
@@ -148,7 +165,53 @@ nav {
 }
 
 .about-me__img{
-    width: 80%;
-    margin: 0 auto 0 80px;
+   width: 100%
     
+}
+
+/* techstack */
+
+.language__list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__img {
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms ease;
+}
+.language:hover .language__img {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language__name{
+    position: absolute;
+    bottom: 0;
+    font-weight: 300;
+    font-size: 16px;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
 }
