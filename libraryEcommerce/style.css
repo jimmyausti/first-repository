@@ -5,10 +5,12 @@
     margin: 0;
     box-sizing:border-box;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 section:nth-child(even) {
@@ -18,6 +20,7 @@ section:nth-child(even) {
 body {
     height: 80px;
     overflow-x: hidden;
+   
 }
 
 .container {
@@ -45,6 +48,10 @@ a:hover {
     text-decoration: underline;
 }
 
+i{
+    text-decoration: none;
+}
+
 .highlighter {
     color: green;
 }
@@ -55,7 +62,6 @@ img{
 
 nav {
     height: 80px;
-    display: flex;
 }
 
 .nav__container {
@@ -80,6 +86,8 @@ li {
     list-style-type: none;
 }
 
+
+/*! fix nav centre alignment cause=> burger button pushing elements to the left */
 .nav__link {
     margin-left: 16px;
     text-decoration: none;
@@ -101,12 +109,11 @@ li {
 
 /* burger */
 
-.menu__list--wrapper {
+ .menu__list--wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .burger__button {
     background-color: transparent;
@@ -115,6 +122,8 @@ li {
     border: none;
     color: green;
     display: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu__backdrop {
@@ -131,9 +140,11 @@ li {
     visibility: hidden;
     opacity: 0;
     transition: all 300ms ease;
+    margin: 0;
+    padding: 0;
 }
 .menu--open .menu__backdrop{
-    /* display: flex; */
+    display: flex;
     visibility: visible;
     opacity: 1;
 }
@@ -226,6 +237,10 @@ h2 {
 /* highlights */
 
 
+.fa-solid{
+    text-decoration: none;
+}
+
 #highlights{
     position: relative;
     
@@ -242,14 +257,11 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.highlight__para {
-    text-align: center;
-    max-width: 280px;
+    list-style-type: none;
 }
 
 .highlight__img {
+    text-decoration: none;
     border: 2px solid brown;
     color: maroon;
     width: 100px;
@@ -261,6 +273,12 @@ h2 {
     font-size: 32px;
     margin-bottom: 24px;
 }
+
+.highlight__para {
+    text-align: center;
+    max-width: 280px;
+}
+
 
 .highlight__subtitle {
     font-size: 20px;
@@ -359,24 +377,25 @@ a.footer__link,
 
 /* small phones, tablets, large smartphones */
 
-@media (max-width: 768px) {
+@media (max-width: 736px) {
     .section__content {
         padding: 0 24px;
-
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     h2{
-        font-size: 26px;
+        font-size: 20px;
     }
 
     button {
         font-size: 18px;
     }
+}
 
+@media (max-width: 580px) {
     .book {
         width: 50%;
     }
