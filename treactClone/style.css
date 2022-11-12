@@ -194,7 +194,7 @@ section h2{
 }
 
 .services {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 }
 .card-group {
@@ -307,6 +307,7 @@ section h2{
     margin: 0 0.4rem;
 }
 
+
 .plan-title, .plan-details {
     border-bottom: rgb(226, 232, 240) 0.2rem solid;
 }
@@ -358,6 +359,27 @@ input{
         margin: 0;
         justify-content: center;
         text-align: center;
+        width: 100%;
     }
 
+}
+
+@media (max-width: 536px) {
+    #main-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 0.25rem;
+    }
+    .card-group, .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-wrapper{
+        width: 100%;
+    }
 }
